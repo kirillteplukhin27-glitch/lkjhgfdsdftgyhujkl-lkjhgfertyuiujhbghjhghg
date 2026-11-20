@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "toggleinteract",
+  "version": "${version}",
+  "name": "Toggle Interact",
+  "description": "Кнопка отключает взаимодействие с блоками (сундук, печка, верстак), чтобы ставить блоки без шифта.",
+  "authors": ["you"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.example.toggleinteract.ToggleInteractClient"]
+  },
+  "mixins": ["toggleinteract.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.19.0",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
